@@ -1,0 +1,153 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--System-->
+    <string name="app_name">Air</string>
+    <string name="json">1</string>
+
+    <!--Headers-->
+    <string name="my_profile">Мой профиль</string>
+    <string name="feeds">Ленты</string>
+    <string name="settings">Прочее</string>
+    <string name="communities">Общение</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="business_dialog">Бизнес-диалог</string>
+    <string name="alfatv_archive">Видео</string>
+    <string name="profile_bottom_text">Больше информации и возможностей \n на портале «Альфа-Мир»</string>
+    <string name="alfa_life">Новости сотрудников</string>
+    <string name="thank_you">Хочу сказать спасибо!</string>
+    <string name="air_dev">Развитие Air и Альфа-Мира</string>
+    <string name="alfa_for_you">Альфа для тебя</string>
+    <string name="alfa_children">Alfachildren</string>
+    <string name="report_problem">Сообщить о проблеме</string>
+    <string name="sport">Спортивные сообщества</string>
+    <string name="forum">Форум</string>
+    <string name="avito">Доска объявлений</string>
+    <string name="alfa_tv">Альфа-ТВ</string>
+
+    <!--Dialogs-->
+    <string name="info_favorite_dialog">"Общайтесь, смотрите контакты, узнавайте о днях рождениях и отпусках"</string>
+    <string name="info_favorite_dialog_pic">"Добавить \n в избранное"</string>
+    <string name="info_subscriptions_dialog_title">"Подписывайтесь на ленты \n и статьи"</string>
+    <string name="info_subscriptions_dialog">"Узнавайте о новых публикациях \n и комментариях"</string>
+    <string name="info_push_settings_title">"Настройте \n Push-уведомления"</string>
+    <string name="info_push_settings_lead">"Будьте в курсе всех событий \n Ваших коллег и Банка"</string>
+    <string name="something_went_wrong">"Что-то пошло не так"</string>
+    <string name="push_settings_general">Приходят даже когда приложение Air выключено</string>
+
+    <string name="add_to_favorite">Добавить в избранное</string>
+    <string name="remove_photo">Удалить фото</string>
+
+    <string name="edit_mobile_hint">
+        <font size="16">+7 (000) 000-00-00</font>
+    </string>
+    <string name="about">О приложении</string>
+    <string name="edittext_hint">
+        <font size="16">Добавьте подпись к фото ...</font>
+    </string>
+    <string name="edittext_hint_post">
+        <font size="16">Напишите комментарий ...</font>
+    </string>
+    <string name="edittext_hint_search">
+        <font size="16">Поиск коллег и статей ...</font>
+    </string>
+    <string name="search_toolbar_hint">
+        <font size="16">Поиск сотрудников и статей ...</font>
+    </string>
+    <string name="chat_edit_text_hint">
+        <font size="16">Введите сообщение</font>
+    </string>
+    <string name="input_text_length_error">Введи минимум 6 символов</string>
+    <string name="anonymous_name">Anonymous</string>
+
+    <string name="post_sent">Отправлено</string>
+    <string name="post_sending_error">Произошла ошибка</string>
+    <string name="post_sending_retry">Повторить?</string>
+
+    <!--Exoplayer-->
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="text">Text</string>
+    <string name="retry">Retry</string>
+    <string name="unexpected_intent_action">Unexpected intent action:
+        <xliff:g id="action">%1$s</xliff:g>
+    </string>
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_no_decoder">This device does not provide a decoder for
+        <xliff:g id="mime_type">%1$s</xliff:g>
+    </string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for
+        <xliff:g id="mime_type">%1$s</xliff:g>
+    </string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder
+        <xliff:g id="decoder_name">%1$s</xliff:g>
+    </string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+
+    <!--Placeholders-->
+    <string name="onegin">«Мой дядя самых честных правил,
+        Когда не в шутку занемог,
+        Он уважать себя заставил
+        И лучше выдумать не мог.
+        Его пример другим наука;
+        Но, боже мой, какая скука
+        С больным сидеть и день и ночь,
+        Не отходя ни шагу прочь!
+        Какое низкое коварство
+        Полуживого забавлять,
+        Ему подушки поправлять,
+        Печально подносить лекарство,
+        Вздыхать и думать про себя:
+        Когда же черт возьмет тебя!»
+
+        Так думал молодой повеса,
+        Летя в пыли на почтовых,
+        Всевышней волею Зевеса
+        Наследник всех своих родных.
+        Друзья Людмилы и Руслана!
+        С героем моего романа
+        Без предисловий, сей же час
+        Позвольте познакомить вас:
+        Онегин, добрый мой приятель,
+        Родился на брегах Невы,
+        Где, может быть, родились вы
+        Или блистали, мой читатель;
+        Там некогда гулял и я:
+        Но вреден север для меня.
+
+        Служив отлично благородно,
+        Долгами жил его отец,
+        Давал три бала ежегодно
+        И промотался наконец.
+        Судьба Евгения хранила:
+        Сперва Madame за ним ходила,
+        Потом Monsieur ее сменил.
+        Ребенок был резов, но мил.
+        Monsieur l’Abbé, француз убогой,
+        Чтоб не измучилось дитя,
+        Учил его всему шутя,
+        Не докучал моралью строгой,
+        Слегка за шалости бранил
+        И в Летний сад гулять водил.
+    </string>
+    <string name="prayer">Открытая встреча Credo in Deum Patrem omnipotentem, Creatorem caeli et terrae. Et in Iesum Christum, Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus, descendit ad infernos, tertia die resurrexit a mortuis, ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mortuos. Credo in Spiritum Sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam aeternam. Amen.</string>
+
+    <!--Poster-->
+    <string name="sort_type_popular">Популярные</string>
+    <string name="sort_type_recent">Новые</string>
+    <string name="question_sent">Твой вопрос добавлен</string>
+    <string name="question_will_appear">Твой вопрос появится послe утверждения модератором</string>
+    <string name="resend_question_positive">Повторить</string>
+    <string name="resend_question_negative">Отмена</string>
+    <string name="video_placeholder_text">Задай вопрос спикерам — \nлучшие вопросы будут озвучены на\nмероприятии!</string>
+    <string name="poster_text_placeholder">Открытая встреча розницы</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="alfa_tv_enabled">AlfaTvOnAir</string>
+    <string name="update_available">Обновить приложение</string>
+
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="#103058"
+            android:elevation="12dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="left"
+                android:id="@+id/activity_edit_personal_info_fl_cancel"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_deny"
+                    android:layout_gravity="center"
+                    />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Редактирование"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.02"
+                android:layout_gravity="center"
+                />
+
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:id="@+id/activity_edit_personal_info_fl_accept"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_accept"
+                    android:layout_gravity="center"
+                    />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_edit_personal_info_nsv_container"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:id="@+id/activity_edit_personal_info_image_profile"
+                    android:src="@drawable/ic_avatar_default"/>
+
+                <ImageView
+                    android:id="@+id/activity_edit_personal_info_image_add_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_photo_edit"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="12dp"
+                    android:visibility="visible"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#333333"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                android:text="Мобильный телефон"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:background="@drawable/background_curved_corners_grey"
+                android:text="89262535307"
+                android:paddingLeft="12dp"
+                android:gravity="center_vertical"
+                android:id="@+id/activity_edit_personal_info_tv_mobile_0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:background="@drawable/background_curved_corners_grey"
+                android:text="89262535307"
+                android:paddingLeft="12dp"
+                android:maxLength="11"
+                android:gravity="center_vertical"
+                android:id="@+id/activity_edit_personal_info_tv_mobile_1"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:background="@drawable/background_curved_corners_grey"
+                android:text="89262535307"
+                android:paddingLeft="12dp"
+                android:maxLength="11"
+                android:gravity="center_vertical"
+                android:id="@+id/activity_edit_personal_info_tv_mobile_2"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:background="@drawable/background_curved_corners_grey"
+                android:text="89262535307"
+                android:paddingLeft="12dp"
+                android:maxLength="11"
+                android:gravity="center_vertical"
+                android:id="@+id/activity_edit_personal_info_tv_mobile_3"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:background="@drawable/background_curved_corners_grey"
+                android:text="89262535307"
+                android:paddingLeft="12dp"
+                android:maxLength="11"
+                android:gravity="center_vertical"
+                android:id="@+id/activity_edit_personal_info_tv_mobile_4"
+                android:visibility="gone"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#1875f0"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="12dp"
+                android:text="+ Добавить ещё мобильный"
+                android:gravity="center_vertical"
+                android:background="@drawable/background_curved_corners_blue_with_dash"
+                android:id="@+id/activity_edit_personal_info_tv_add_mobile"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#333333"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                android:text="О себе"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                />
+
+            <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:lineSpacingExtra="8sp"
+                android:hint="Введите любую дополнительную информацию о себе"
+                android:background="@drawable/background_curved_corners_grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:minHeight="88dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="8dp"
+                android:gravity="top"
+
+                android:inputType="textMultiLine"
+                android:id="@+id/activity_edit_personal_info_et_about_me"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Desktop-air-androidd.iml" filepath="$PROJECT_DIR$/Desktop-air-androidd.iml" group="air-androidd" />
+      <module fileurl="file://$PROJECT_DIR$/file-chooser/Desktop-air-androidd-file-chooser.iml" filepath="$PROJECT_DIR$/file-chooser/Desktop-air-androidd-file-chooser.iml" group="air-androidd/file-chooser" />
+      <module fileurl="file://$PROJECT_DIR$/Users-plotnikov-Desktop-air-androidd.iml" filepath="$PROJECT_DIR$/Users-plotnikov-Desktop-air-androidd.iml" group="air-androidd" />
+      <module fileurl="file://$PROJECT_DIR$/air-androidd.iml" filepath="$PROJECT_DIR$/air-androidd.iml" group="air-androidd" />
+      <module fileurl="file://$PROJECT_DIR$/file-chooser/air-androidd-file-chooser.iml" filepath="$PROJECT_DIR$/file-chooser/air-androidd-file-chooser.iml" group="air-androidd/file-chooser" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="air-androidd/app" />
+      <module fileurl="file://$PROJECT_DIR$/plotnikov-Desktop-air-androidd.iml" filepath="$PROJECT_DIR$/plotnikov-Desktop-air-androidd.iml" group="air-androidd" />
+    </modules>
+  </component>
+</project>

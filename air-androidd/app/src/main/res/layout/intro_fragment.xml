@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    >
+
+    <ImageView
+        android:id="@+id/intro_fragment_image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000" />
+
+    <FrameLayout
+        android:id="@+id/intro_fragment_fl_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:rotation="180"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/intro_fragment_ll_intro_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/intro_fragment_fl_back"
+        android:layout_above="@+id/intro_fragment_fl_start"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/intro_fragment_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="8sp"
+            tools:text="Опрос до 23 июня"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/intro_fragment_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="8sp"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="normal"
+            android:maxLines="3"
+            android:ellipsize="end"
+            tools:text="@string/onegin" />
+
+        <ScrollView
+            android:id="@+id/intro_fragment_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/frame_survey_intro"
+            android:fadeScrollbars="false"
+            android:visibility="visible"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/intro_fragment_tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:paddingRight="4dp"
+                tools:text="@string/onegin" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/intro_fragment_fl_start"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:text="Начать"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:background="@drawable/background_curved_corners_grey" />
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:id="@+id/activity_create_post_fl_photo"
+    android:background="@drawable/background_bubble_grey">
+
+    <ImageView
+    android:id="@+id/activity_create_post_image_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/ic_add_photo" />
+
+    <ImageView
+        android:id="@+id/rc_item_upload_photo_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_upload"
+        android:layout_gravity="right"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:visibility="gone"/>
+
+</FrameLayout>

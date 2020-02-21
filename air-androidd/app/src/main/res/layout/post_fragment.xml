@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_post_main_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/activity_post_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_fragment_toolbar"
+        android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_post_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_post_ll_curtain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_author_placeholder"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_heading_placeholder"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_image_placeholder"
+            android:layout_marginTop="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_text_placeholder"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/search_fragment_toolbar"
+        layout="@layout/post_fragment_toolbar"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/activity_post_fl_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:background="@drawable/background_blur"
+        android:layout_alignParentBottom="true">
+
+        <ru.alfabank.alfamir.ui.custom_views.InvisibleToBackPressedEditText
+            android:id="@+id/activity_post_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:hint="@string/edittext_hint_post"
+            android:textColorHint="#FFFFFF"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="6"
+            android:paddingLeft="12dp"
+            android:paddingRight="48dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="6sp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp" />
+
+        <FrameLayout
+            android:id="@+id/post_fragment_fl_send"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|bottom">
+
+            <ImageView
+                android:id="@+id/activity_post_image_send_comment"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_send" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_post_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment"
+        android:tint="#1875f0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom|right"
+        android:visibility="visible"
+        app:backgroundTint="#ffffff"
+        app:fabSize="normal" />
+
+</RelativeLayout>

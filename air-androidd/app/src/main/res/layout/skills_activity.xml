@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="#103058"
+        android:elevation="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/activity_skills_ll_back">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_caret"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:letterSpacing="-0.02"
+                android:text="Назад"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экспертиза"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.02"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:id="@+id/activity_skills_fl_info">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/activity_skills_tv_skills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textColor="#de000000"
+        android:lineSpacingExtra="6sp"
+        tools:text="18 сентября"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="72dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/activity_skills_ll_empty_state">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skills_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#030303"
+            android:letterSpacing="-0.02"
+            android:maxLines="1"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="Экспертиза не заполнена" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#999999"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="Заполненная экспертиза позволяет делиться знаниями с коллегами и получать помощь, когда требуется"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+        <FrameLayout
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_curved_corners_blue_filled"
+            android:layout_marginTop="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                android:text="Предложить заполнить"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

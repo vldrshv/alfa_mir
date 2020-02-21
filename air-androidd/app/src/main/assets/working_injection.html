@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Alert</h2>
+
+<button onclick="setImage('air_image1', 'data:image/jpeg;charset=utf-8;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==')">Try it</button>
+
+<button onclick="myFunction()">Try it also</button>
+
+<h2 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">
+    6 августа состоится 4-й Demo Day в Операционном блоке. Приглашаем всех желающих на это событие!</h2>
+
+<div id="air_image1" style="width:100%;height:274px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div>
+
+<div><video controls  style="width-max:116px;height:250px;margin:0px auto;margin-bottom:5px;margin-top: -10px;" poster="http://alfa/ya/PublishingImages/AirImages/phl_video_854x480.png" id="alfatv_iframe0" data-id="5637" preload="none" width="100%" height="250" onplay="onPlayVideo('alfatv_iframe0',0)">
+    <source id="source_video" type="video/mp4"></video></div>
+
+<script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+
+function setImage(id, content) {
+    var im = document.getElementById(id);
+    im.style.backgroundImage = 'url("' + content + '")';
+}
+function changeVideoSource(id, url) {
+    alert("changeVideoSource");
+    var video = document.getElementById(id);
+    video.src = url;
+    video.play();
+}
+
+function onPlayVideo(id, reqPassword) {
+    var video = document.getElementById(id);
+    if (video.src == "") {
+      if(typeof app !== "undefined"){
+          var typedPassword = "";
+          if (reqPassword == 1){
+             typedPassword = prompt("Введите PIN-код для просмотра видео", "");
+             if (typedPassword) {
+
+             } else {
+                 video.load();
+                 return
+             }
+           }
+              app.onVideoClicked(id, typedPassword);
+           }
+
+       if (window && window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.player) {
+           var typedPassword = "";
+               if (reqPassword == 1){
+                  typedPassword = prompt("Введите PIN-код для просмотра видео", "");
+               if (typedPassword) {
+
+               } else {
+                   video.load();
+                   return
+               }
+           }
+           var message = { id: id, pwd: typedPassword };
+           window.webkit.messageHandlers.player.postMessage(message);
+       }
+    }
+}
+
+</script>
+
+</body>
+</html>

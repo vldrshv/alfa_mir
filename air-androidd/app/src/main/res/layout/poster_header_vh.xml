@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FAFAFA">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:lineSpacingExtra="10sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="Спроси спикера"
+            android:textColor="#858585"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/write_question_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="13dp"
+            android:src="@drawable/ic_chat_new"
+            android:tint="#858585" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="12dp"
+            android:lineSpacingExtra="8sp"
+            android:text="Напиши свой вопрос"
+            android:textColor="#858585"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</LinearLayout>

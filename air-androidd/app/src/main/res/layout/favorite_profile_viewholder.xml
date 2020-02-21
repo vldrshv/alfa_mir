@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:paddingLeft="12dp"
+    android:id="@+id/favorite_profile_viewholder_rl_main">
+
+    <FrameLayout
+        android:id="@+id/favorite_profile_viewholder_fl_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/favorite_profile_viewholder_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/favorite_profile_viewholder_initials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/favorite_profile_viewholder_fl_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:paddingRight="36dp">
+
+        <TextView
+            android:id="@+id/favorite_profile_viewholder_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#292929"
+            android:lineSpacingExtra="8sp"
+            tools:text="В каждой стране есть нечто, что бросает вызов, застав..."
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/favorite_profile_viewholder_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#858585"
+            android:lineSpacingExtra="8sp"
+            tools:text="4 сентября 2018"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_caret_right"
+            android:tint="#858585"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="188dp"
+        android:padding="16dp"
+        android:backgroundTint="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:id="@+id/textview"
+            android:textColor="#de000000"
+            android:lineSpacingExtra="8sp"
+            android:text="Мобильный телефон"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:id="@+id/edit_mobile_dialog_et_blank_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="@string/edit_mobile_hint"
+                android:textColorHint="#999999"
+                android:inputType = "phone"
+                />
+
+            <ImageView
+                android:id="@+id/edit_mobile_dialog_image_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_delete_bin_orange"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="28dp"
+            >
+
+            <FrameLayout
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/edit_mobile_dialog_fl_cancel"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#007aff"
+                    android:text="Отмена"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:background="#cccccc"
+                android:id="@+id/edit_mobile_dialog_fl_save"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#fafafa"
+                    android:text="Сохранить"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

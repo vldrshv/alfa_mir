@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/result_fragment_image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="280dp"
+        >
+
+        <TextView
+            android:id="@+id/result_fragment_tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/onegin"
+            android:maxLines="7"
+            android:ellipsize="end"
+            android:textColor="#ffffffff"
+            android:textSize="28dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/result_fragment_tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/onegin"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#ffffffff"
+            android:textSize="64dp"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/result_fragment_fl_end"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_curved_corners_grey"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Завершить"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "563393136954",
+    "firebase_url": "https://alfamir-c5378.firebaseio.com",
+    "project_id": "alfamir-c5378",
+    "storage_bucket": "alfamir-c5378.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563393136954:android:538e047665fd07b9",
+        "android_client_info": {
+          "package_name": "ru.alfabank.alfamir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563393136954-ubb5lmo70tam0uuabhsav56tgjjf66ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaBwcstmcTUn6cosBxjtOQgWXQV316rQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

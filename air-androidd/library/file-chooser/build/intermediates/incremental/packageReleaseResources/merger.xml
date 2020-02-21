@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res"><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable/ic_file_v.xml" preprocessing="true" qualifiers=""><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xxxhdpi/ic_file_v.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-mdpi/ic_file_v.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-ldpi/ic_file_v.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xxhdpi/ic_file_v.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-hdpi/ic_file_v.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xhdpi/ic_file_v.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-anydpi-v24/ic_file_v.xml" qualifiers="anydpi-v24" type="drawable"/></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/ic_folder_v.xml" preprocessing="true" qualifiers="xxhdpi-v4"><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xxhdpi/ic_folder_v.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xxhdpi-v24/ic_folder_v.xml" qualifiers="xxhdpi-v24" type="drawable"/></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/ic_folder_col.xml" preprocessing="true" qualifiers="xxhdpi-v4"><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xxhdpi/ic_folder_col.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/pngs/release/drawable-xxhdpi-v24/ic_folder_col.xml" qualifiers="xxhdpi-v24" type="drawable"/></file></source><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/rs/release"/><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res"><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-v19/bool.xml" qualifiers="v19"><bool name="use_activity">false</bool><bool name="use_provider">true</bool></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-v21/styles.xml" qualifiers="v21"><public name="FileChooserDialogStyle" type="style"/><style name="FileChooserDialogStyle" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:windowTitleStyle">@style/FileChooserTitleStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:buttonBarStyle">@android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="android:buttonBarButtonStyle">@style/FileChooserButtonStyle</item>
+    </style></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-v11/strings.xml" qualifiers="v11"><string name="choose_file">Choose a file</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-ru/strings.xml" qualifiers="ru"><string name="empty_directory">Пустая папка</string><string name="storage_removed">Storage was removed or unmounted.</string><string name="choose_file">Выберите файл</string><string name="error_selecting_file">Ошибка при выборе файла</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-zh-rTW/strings.xml" qualifiers="zh-rTW"><string name="empty_directory">空目錄</string><string name="storage_removed">存儲卡已被移除或卸載。</string><string name="choose_file">選擇一個文件</string><string name="error_selecting_file">選擇文件發生了錯誤</string><string name="internal_storage">內部存儲</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-zh-rTW/strings_0.xml" qualifiers="zh-rTW"><string name="title_choose">選擇</string><string name="title_choose_dict_file">選擇一個字典文件</string><string name="dialog_ok">選擇</string><string name="dialog_cancel">取消</string><string name="option_create_folder">新建目錄</string><string name="options_delete">刪除</string><string name="new_folder_cancel">放棄</string><string name="new_folder_ok">確定</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-it/strings.xml" qualifiers="it"><string name="empty_directory">Directory vuota</string><string name="storage_removed">Lo spazio di archiviazione è stato rimosso o smontato.</string><string name="choose_file">Selezionare un file</string><string name="error_selecting_file">Errore nel selezionare il File</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-ca/strings.xml" qualifiers="ca"><string name="empty_directory">Carpeta buida</string><string name="storage_removed">S\'ha tret o desmuntat l\'emmagatzematge.</string><string name="choose_file">Seleccioneu un fitxer</string><string name="error_selecting_file">Error en seleccionar el fitxer</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-zh-rCN/strings.xml" qualifiers="zh-rCN"><string name="empty_directory">空目录</string><string name="storage_removed">存储卡已被移除或卸载。</string><string name="choose_file">选择一个文件</string><string name="error_selecting_file">选择文件发生了错误</string><string name="internal_storage">内部存储</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-zh-rCN/strings_0.xml" qualifiers="zh-rCN"><string name="title_choose">选择</string><string name="title_choose_dict_file">选择一个字典文件</string><string name="dialog_ok">选择</string><string name="dialog_cancel">取消</string><string name="option_create_folder">新建文件夹</string><string name="options_delete">删除</string><string name="new_folder_cancel">放弃</string><string name="new_folder_ok">确定</string></file><file name="ic_menu_24dp" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable/ic_menu_24dp.xml" qualifiers="" type="drawable"/><file name="ic_add_24dp" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable/ic_add_24dp.xml" qualifiers="" type="drawable"/><file name="top_shadow_gradient" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable/top_shadow_gradient.xml" qualifiers="" type="drawable"/><file name="ic_delete_24dp" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable/ic_delete_24dp.xml" qualifiers="" type="drawable"/><file name="li_row_textview" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/layout/li_row_textview.xml" qualifiers="" type="layout"/><file name="file_chooser_layout" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/layout/file_chooser_layout.xml" qualifiers="" type="layout"/><file name="file_vh" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/layout/file_vh.xml" qualifiers="" type="layout"/><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-ga/strings.xml" qualifiers="ga"><string name="empty_directory">Comhadlann fholamh</string><string name="storage_removed">Baineadh amach an gléas stórála nó dínascadh é.</string><string name="choose_file">Roghnaigh comhad</string><string name="error_selecting_file">Tharla botún fad is a bhí comhad á roghnú</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-pt-rBR/strings.xml" qualifiers="pt-rBR"><string name="empty_directory">Pasta Vazia</string><string name="storage_removed">Unidade externa removida ou não preparada.</string><string name="choose_file">Selecione um Arquivo</string><string name="error_selecting_file">Erro ao selecionar o Arquivo</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/colors.xml" qualifiers=""><color name="material_deep_teal_200">#ff80cbc4</color><color name="material_deep_teal_500">#ff009688</color><color name="li_row_background">#fffbfbfb</color><color name="li_row_background_tint">#4027bfad</color><color name="light">#EDF4FE</color><color name="white">#ffffff</color></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/dimens.xml" qualifiers=""><dimen name="list_padding">0dp</dimen><dimen name="list_item_padding">8dp</dimen></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/bool.xml" qualifiers=""><bool name="use_activity">true</bool><bool name="use_provider">false</bool></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/styles.xml" qualifiers=""><style name="Theme.Transparent" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style><public name="FileChooserStyle" type="style"/><style name="FileChooserStyle">
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:textColorPrimary">@color/material_deep_teal_500</item>
+        <item name="android:textColorSecondary">@color/material_deep_teal_500</item>
+        <item name="colorPrimary">@color/material_deep_teal_500</item>
+        <item name="colorPrimaryDark">@color/material_deep_teal_500</item>
+        <item name="colorAccent">@color/material_deep_teal_200</item>
+        <item name="fileChooserDialogGravity">center</item>
+        <item name="fileChooserDialogBackgroundDimAmount">0.3</item>
+        <item name="fileChooserDialogStyle">@style/FileChooserDialogStyle</item>
+        <item name="fileChooserListItemStyle">@style/FileChooserListItemStyle</item>
+        <item name="fileChooserPathViewStyle">@style/FileChooserPathViewStyle</item>
+        <item name="fileChooserNewFolderStyle">@style/FileChooserNewFolderStyle</item>
+    </style><public name="FileChooserDialogStyle" type="style"/><style name="FileChooserDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/FileChooserTitleStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:buttonBarStyle">@android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="android:buttonBarButtonStyle">@style/FileChooserButtonStyle</item>
+    </style><public name="FileChooserTitleStyle" type="style"/><style name="FileChooserTitleStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+        <item name="android:textColor">#f000</item>
+    </style><public name="FileChooserButtonStyle" type="style"/><style name="FileChooserButtonStyle" parent="@android:style/Holo.Light.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+    </style><public name="FileChooserListItemStyle" type="style"/><style name="FileChooserListItemStyle">
+        <item name="fileChooserTextNameStyle">@style/FileChooserTextNameStyle</item>
+        <item name="fileChooserTextSizeStyle">@style/FileChooserTextSizeStyle</item>
+        <item name="fileChooserTextDateStyle">@style/FileChooserTextDateStyle</item>
+        <item name="fileChooserFileIconStyle">@style/FileChooserFileIconStyle</item>
+        <item name="android:background">@color/li_row_background</item>
+        <item name="fileListItemSelectedTint">@color/li_row_background_tint</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:padding">10dp</item>
+    </style><public name="FileChooserTextNameStyle" type="style"/><style name="FileChooserTextNameStyle">
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:drawablePadding">@dimen/list_item_padding</item>
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style><public name="FileChooserTextSizeStyle" type="style"/><style name="FileChooserTextSizeStyle">
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:textColor">@color/material_deep_teal_200</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style><public name="FileChooserTextDateStyle" type="style"/><style name="FileChooserTextDateStyle">
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:textColor">@color/material_deep_teal_200</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style><public name="FileChooserFileIconStyle" type="style"/><style name="FileChooserFileIconStyle">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style><public name="FileChooserPathViewStyle" type="style"/><style name="FileChooserPathViewStyle">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textColor">#40000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="fileChooserPathViewElevation">2</item>
+        <item name="fileChooserPathViewDisplayRoot">true</item>
+    </style><public name="FileChooserNewFolderStyle" type="style"/><style name="FileChooserNewFolderStyle">
+        <item name="fileChooserNewFolderOverlayColor">#60ffffff</item>
+        <item name="fileChooserNewFolderBackgroundColor">#ffffffff</item>
+        <item name="fileChooserNewFolderWidthWeight">0.56</item>
+        <item name="fileChooserNewFolderElevation">25</item>
+        <item name="fileChooserNewFolderTextColor">@color/material_deep_teal_500</item>
+    </style></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/attr.xml" qualifiers=""><attr format="reference" name="fileChooserStyle"/><declare-styleable name="FileChooser">
+        <attr format="flags" name="fileChooserDialogGravity">
+            <flag name="no_gravity" value="0"/>
+            <flag name="left" value="3"/>
+            <flag name="top" value="48"/>
+            <flag name="right" value="5"/>
+            <flag name="bottom" value="80"/>
+            <flag name="center" value="17"/>
+            <flag name="center_horizontal" value="1"/>
+            <flag name="center_vertical" value="16"/>
+            <flag name="start" value="8388611"/>
+            <flag name="end" value="8388613"/>
+        </attr>
+        <attr format="float|reference" name="fileChooserDialogBackgroundDimAmount"/>
+        <attr format="reference" name="fileChooserDialogStyle"/>
+        <attr format="reference" name="fileChooserListItemStyle"/>
+        <attr format="reference" name="fileChooserTextNameStyle"/>
+        <attr format="reference" name="fileChooserTextSizeStyle"/>
+        <attr format="reference" name="fileChooserTextDateStyle"/>
+        <attr format="reference" name="fileChooserFileIconStyle"/>
+        <attr format="color|reference" name="fileListItemSelectedTint"/>
+        <attr format="reference" name="fileChooserPathViewStyle"/>
+        <attr format="integer|reference" name="fileChooserPathViewElevation"/>
+        <attr format="boolean|reference" name="fileChooserPathViewDisplayRoot"/>
+        <attr format="reference" name="fileChooserNewFolderStyle"/>
+        <attr format="color|reference" name="fileChooserNewFolderOverlayColor"/>
+        <attr format="color|reference" name="fileChooserNewFolderBackgroundColor"/>
+        <attr format="float|reference" name="fileChooserNewFolderWidthWeight"/>
+        <attr format="integer|reference" name="fileChooserNewFolderElevation"/>
+        <attr format="color|reference" name="fileChooserNewFolderTextColor"/>
+    </declare-styleable></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/strings.xml" qualifiers=""><string name="empty_directory">Empty Directory</string><string name="storage_removed">Storage was removed or unmounted.</string><string name="choose_file">Select a file</string><string name="error_selecting_file">Error selecting File</string><string name="internal_storage">Internal storage</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values/strings_0.xml" qualifiers=""><string name="title_choose">Choose</string><string name="title_choose_dict_file">Pick a dictionary</string><string name="dialog_ok">Select</string><string name="dialog_cancel">Cancel</string><string name="option_create_folder">New folder</string><string name="options_delete">Delete</string><string name="new_folder_cancel">Cancel</string><string name="new_folder_ok">OK</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-pl/strings.xml" qualifiers="pl"><string name="empty_directory">Pusty katalog</string><string name="storage_removed">Pamięć została usunięta lub odmontowana.</string><string name="choose_file">Wybierz plik</string><string name="error_selecting_file">Błąd, podczas wybierania pliku</string></file><file name="ic_file" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xhdpi/ic_file.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_folder" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xhdpi/ic_folder.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_provider" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xhdpi/ic_provider.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_chooser" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xhdpi/ic_chooser.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_file" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/ic_file.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_folder" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/ic_folder.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_provider" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/ic_provider.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="selected" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/selected.xml" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_chooser" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-xxhdpi/ic_chooser.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_file" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-hdpi/ic_file.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_folder" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-hdpi/ic_folder.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_provider" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-hdpi/ic_provider.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_chooser" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-hdpi/ic_chooser.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_file" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-mdpi/ic_file.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_folder" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-mdpi/ic_folder.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_provider" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-mdpi/ic_provider.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_chooser" path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/drawable-mdpi/ic_chooser.png" qualifiers="mdpi-v4" type="drawable"/><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-fr/strings.xml" qualifiers="fr"><string name="empty_directory">Dossier vide</string><string name="storage_removed">Le stockage a été enlevé ou démonté.</string><string name="choose_file">Sélectionnez un fichier</string><string name="error_selecting_file">Erreur lors de la sélection du fichier</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-es/strings.xml" qualifiers="es"><string name="empty_directory">Directorio vacío</string><string name="storage_removed">Se ha retirado o desmontado el almacenamiento.</string><string name="choose_file">Seleccione un archivo</string><string name="error_selecting_file">Error al seleccionar el archivo</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-de/strings.xml" qualifiers="de"><string name="empty_directory">Leerer Ordner</string><string name="storage_removed">Speicher wurde entfernt.</string><string name="choose_file">Wähle eine Datei</string><string name="error_selecting_file">Fehler beim Öffnen der Datei</string></file><file path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/main/res/values-ko/strings.xml" qualifiers="ko"><string name="empty_directory">빈 디렉토리</string><string name="storage_removed">저장소가 제거되었습니다.</string><string name="choose_file">파일 선택</string><string name="error_selecting_file">파일 선택 오류</string></file></source><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/rs/release"/><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/plotnikov/Desktop/air-androidd/library/file-chooser/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="FileChooser">
+        <attr format="flags" name="fileChooserDialogGravity">
+            <flag name="no_gravity" value="0"/>
+            <flag name="left" value="3"/>
+            <flag name="top" value="48"/>
+            <flag name="right" value="5"/>
+            <flag name="bottom" value="80"/>
+            <flag name="center" value="17"/>
+            <flag name="center_horizontal" value="1"/>
+            <flag name="center_vertical" value="16"/>
+            <flag name="start" value="8388611"/>
+            <flag name="end" value="8388613"/>
+        </attr>
+        <attr format="float|reference" name="fileChooserDialogBackgroundDimAmount"/>
+        <attr format="reference" name="fileChooserDialogStyle"/>
+        <attr format="reference" name="fileChooserListItemStyle"/>
+        <attr format="reference" name="fileChooserTextNameStyle"/>
+        <attr format="reference" name="fileChooserTextSizeStyle"/>
+        <attr format="reference" name="fileChooserTextDateStyle"/>
+        <attr format="reference" name="fileChooserFileIconStyle"/>
+        <attr format="color|reference" name="fileListItemSelectedTint"/>
+        <attr format="reference" name="fileChooserPathViewStyle"/>
+        <attr format="integer|reference" name="fileChooserPathViewElevation"/>
+        <attr format="boolean|reference" name="fileChooserPathViewDisplayRoot"/>
+        <attr format="reference" name="fileChooserNewFolderStyle"/>
+        <attr format="color|reference" name="fileChooserNewFolderOverlayColor"/>
+        <attr format="color|reference" name="fileChooserNewFolderBackgroundColor"/>
+        <attr format="float|reference" name="fileChooserNewFolderWidthWeight"/>
+        <attr format="integer|reference" name="fileChooserNewFolderElevation"/>
+        <attr format="color|reference" name="fileChooserNewFolderTextColor"/>
+    </declare-styleable></configuration></mergedItems></merger>

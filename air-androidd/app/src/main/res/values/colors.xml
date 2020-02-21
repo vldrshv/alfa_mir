@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#0a203b</color>
+    <color name="colorAccent">#2196F3</color>
+
+
+
+    <color name="switchColor">#1875f0</color>
+    <color name="test">#FF4081</color>
+    <color name="borders">#365172</color>
+    <color name="rc_item_show_progressbar">#efeff4</color>
+    <color name="profile_borders">#0f000000</color>
+    <color name="rc_item_show_borders">#c8c7cc</color>
+    <color name="profile_collapsed_type">#5c5c5c</color>
+    <color name="profile_collapsed_info">#212121</color>
+    <color name="color_clicked">#c8defc</color>
+
+    <color name="icon_blank_fill">#96A4B5</color>
+    <color name="test1">#52ffffff</color>
+    <color name="splatton2G">#00cc00</color>
+    <color name="splatoon2">#f10eb8</color>
+
+    <color name="borders_light">#61c8c7cc</color>
+    <color name="grey_text">#9e9ea6</color>
+    <color name="background_grey_light">#eaeaef</color>
+    <color name="background_grey_dark">#a7a7ac</color>
+    <color name="selected">#5490df</color>
+    <color name="background_image_blue">#0076FF</color>
+    <color name="menu_background_blue">#0F3058</color>
+    <color name="menu_background_dark_blue">#071628</color>
+    <color name="rippleEffect">#45ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background_toolbar">#103058</color>
+    <color name="toolbar_separator">#365175</color>
+    <color name="news_item_bottom">#51efeff4</color>
+    <color name="effect">#141753</color>
+    <color name="menu_back_grey">#EEEFEA</color>
+
+    <color name="blur_center_color">#a3000000</color>
+    <color name="blur_end_color">#a3000000</color>
+    <color name="blur_start_color">#a3000000</color>
+
+    <color name="borders_questionable">#57c8c7cc</color>
+
+    <color name="test11">#a3000000</color>
+
+    <color name="progress_bar_background">#ffffff</color>
+    <color name="progress_bar_color">#1875f0</color>
+    <color name="poster_background">#FAFAFA</color>
+    <color name="like_color_enabled">#1875f0</color>
+    <color name="like_color_disabled">#858585</color>
+    <color name="retry_button">#88ceff</color>
+
+    <color name="background_transparent">#51000000</color>
+    <color name="white">#ffffff</color>
+    <color name="pale_gray">#858585</color>
+</resources>

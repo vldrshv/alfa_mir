@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:id="@+id/drawer_layout"
+        tools:openDrawer="start"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar3"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/background_toolbar"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:elevation="12dp">
+
+
+                <TextView
+                    android:id="@+id/toolbar_tx_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+                    android:letterSpacing="-0.02"
+                    android:text="Air"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:visibility="visible"
+                    android:id="@+id/activity_fragment_main_fl_search">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_search" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:visibility="visible"
+                    android:id="@+id/activity_fragment_main_fl_notification"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+                    <!--android:theme="@style/Ripple"-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_notification" />
+
+                    <FrameLayout
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/activity_fragment_main_fl_badge">
+
+                        <ImageView
+                            android:id="@+id/activity_fragment_main_image_badge"
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="#ffffff"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="2sp"
+                            android:layout_gravity="center"
+                            tools:text="9"
+                            android:id="@+id/activity_fragment_main_tv_badge" />
+
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:visibility="visible"
+                    android:id="@+id/activity_fragment_main_fl_chat">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:tint="#ffffff"
+                        android:src="@drawable/ic_chat_new" />
+                </FrameLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/borders"
+                android:elevation="12dp" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/activity_fragment_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_toolbar"
+                android:elevation="12dp"
+                app:tabIndicatorColor="#ffff8c"
+                app:tabIndicatorHeight="3dp"
+                app:tabMinWidth="50dp"
+                app:tabPaddingBottom="-3dp"
+                app:tabPaddingEnd="-3dp"
+                app:tabPaddingStart="-3dp"
+                app:tabPaddingTop="-3dp"
+                app:tabSelectedTextColor="#ffffff"
+                app:tabTextAppearance="@style/TabWithExtraSize"
+                app:tabTextColor="#b3ffffff">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ЛЕНТА" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="МЕДИА" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ИЗБРАННОЕ" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="АЛЬФА-ТВ" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"></androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="@dimen/menu_weidth"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            android:layout_gravity="start"
+            android:background="@android:color/white">
+
+            <include
+                layout="@layout/nav_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/activity_fragment_main_ll_search"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar4"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/background_toolbar"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/activity_fragment_main_search_fl_search"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_search" />
+
+                </FrameLayout>
+
+                <ru.alfabank.alfamir.ui.custom_views.InvisibleToBackPressedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activity_fragment_main_search_edittext"
+                    android:layout_toLeftOf="@+id/activity_fragment_main_search_fl_cross"
+                    android:layout_toRightOf="@+id/activity_fragment_main_search_fl_search"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:textCursorDrawable="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/edittext_hint_search"
+                    android:textColorHint="#96A4B5"
+                    android:background="@android:color/transparent"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    tools:text="Поиск коллег и статей …"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/activity_fragment_main_search_fl_cross"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_close" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/activity_fragment_main_search_fl_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8f000000"
+            android:clickable="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/search_container"
+                android:layout_below="@+id/activity_post_toolbar_main"
+                android:layout_above="@+id/nav_bar"
+                android:background="@android:color/white" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8f000000"
+        android:id="@+id/activity_main_onboarding_media"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_onboarding_cancel"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/image_onboarding_cancel" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_onboarding_add_photo"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="134dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_onboarding_arror_left_right_down"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="96dp"
+            android:layout_marginRight="37dp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

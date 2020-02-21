@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <script language="javascript">
+        function setImage(id, content) {
+            var im = document.getElementById(id);
+            im.style.backgroundImage = 'url(' + content + ')';
+        }
+
+        function setPoster(id, content) {
+            var vid = document.getElementById(id);
+            vid.poster = content;
+        }
+
+        function changeVideoSource(id, url) {
+            var video = document.getElementById(id);
+            video.src = url; video.play();
+        }
+
+        function myFunction() {
+            alert("Hello! I am an alert box!");
+        }
+
+        function onPlayVideo(id, reqPassword) {
+            var video = document.getElementById(id);
+            if (video.src == '') {
+                try { if (app) {
+                    var typedPassword = ''; if (reqPassword == 1) { typedPassword = prompt('Введите PIN-код для просмотра видео', ''); if (typedPassword) { } else { video.load(); return } } app.onVideoClicked(id, typedPassword); } } catch {if (window.webkit.messageHandlers.player) { var typedPassword = ''; if (reqPassword == 1) { typedPassword = prompt('Введите PIN-код для просмотра видео', ''); if (typedPassword) { } else { video.load(); return } } var message = { id: id, pwd: typedPassword }; window.webkit.messageHandlers.player.postMessage(message); } } } }
+</script>
+</head>
+<body style='margin:0px;padding:0px;'>
+
+<input type="button" onclick="myFunction()" value="Show alert box" />
+
+<div style='position:relative;margin-left:10px;margin-right:10px;word-wrap:break-word;'>
+    <div style="width:412px;height:274px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;">
+        <div id="air_image2" style="width:100%;height:274px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div>
+    </div>
+    <h2 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">6 августа состоится 4-й Demo Day в Операционном блоке. Приглашаем всех желающих на это событие!</h2>
+    <div class="ms-rteElement-reference-left" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px !important;line-height:1.4 !important;">- 6 августа (пн), 13:00<div style="margin-bottom:16px;">
+
+    </div>- Нагатино, конференц-зал 105 <div style="margin-bottom:16px;"></div>- Просмотр по ВКС и Альфа-ТВ</div>
+    <div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">У нашего DemoDay есть <a href="https://" onclick="javascript:alert('Ссылка на ресурс доступна с рабочего компьютера')">страница в Альфа-Мире </a></div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">Контакты, материалы выступлений, фото и видеозаписи всех Demo ждут вас там!</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">По всем вопросам о DemoDay в блоке Операционном вы можете написать администратору системы управления знаниями&nbsp;<a href="http://alfa/page_reference.aspx?id=air_ref1"><span lang="RU" style="font-family:inherit !important;inherit !important;line-height:inherit !important;">Королевой Евгении</span></a>.</div><div style="width:412px;height:219px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image1" style="width:100%;height:219px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><h2 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">Техническая информация о подключении</h2><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;"><span class="ms-rteThemeForeColor-9-0" style="font-family:inherit !important;inherit !important;line-height:inherit !important;"><strong>ВКС:</strong></span></div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">- Внутренний номер для подключения: 0508177</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">- Защитный пин: 5005</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">При городском и междугороднем звонке: (499) 681-16-88 (аудио)</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">- Номер конференции: 0508177</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">- Защитный пин: 5005</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;"><span class="ms-rteThemeForeColor-9-0" style="font-family:inherit !important;inherit !important;line-height:inherit !important;"><strong>Альфа ТВ&nbsp;</strong></span>(трансляция конференции на сайт Альфа-Мира).</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">Аудио-трансляция доступна всем. Рекомендуем использовать наушники.</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">Порядок подключения к трансляции следующий:</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">1. Зайти по ссылке http://alfa/tv/Pages/room1.aspx</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">2. Ввести пароль - 5005</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">3. Если офис есть в списке трансляции, нажать кнопку "смотреть"</div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">4. Если офиса нет в списке трансляции, нажать кнопку "слушать"</div></div></body></html>

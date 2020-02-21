@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/search_page_viewholder_rl_container"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/search_page_viewholder_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/search_page_viewholder_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#292929"
+                android:lineSpacingExtra="8sp"
+                tools:text="Разрабоasdasdasdasdтчsad осени 2017 год…"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/search_page_viewholder_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#858585"
+                android:lineSpacingExtra="8sp"
+                tools:text="28 Апреля 2017"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/search_page_viewholder_fl_caret_right"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="3dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_caret_right"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_page_viewholder_fl_separate_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:layout_alignParentBottom="true"
+        />
+
+</LinearLayout>

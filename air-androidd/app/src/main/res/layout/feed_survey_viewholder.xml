@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ebf4ff"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingBottom="28dp"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="12dp"
+
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/view_holder_quiz_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="8sp"
+            tools:text="Викторина"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <FrameLayout
+            android:id="@+id/view_holder_quiz_fl_close"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:tint="@android:color/holo_red_light"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/view_holder_quiz_fl_quiz_body"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginTop="16dp"
+        android:elevation="12dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffcccccc"
+            >
+
+            <ImageView
+                android:id="@+id/view_holder_quiz_image_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#51000000"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="104dp"
+                >
+
+                <TextView
+                    android:id="@+id/view_holder_quiz_tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="8sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    tools:text="Выиграйте билет на чемпионат мира по футболу FIFA 2018!"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/view_holder_quiz_ll_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/view_holder_quiz_image_date"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_calendar_profile"
+                        android:tint="@android:color/white"
+                        android:layout_marginLeft="16dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/view_holder_quiz_tv_date"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        tools:text="Викторина до 23 июня"
+                        android:layout_marginLeft="8dp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_holder_quiz_ll_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/view_holder_quiz_tv_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:letterSpacing="-0.01"
+                        tools:text="Завершено на 75%"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/view_holder_quiz_progress_bar"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progress_bar_white_with_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="25"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/foreground_curved_corners_blue"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

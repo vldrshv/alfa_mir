@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/news_fragment_rl_main">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_fragment_sr_container"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/news_fragment_appbar"
+        android:background="@android:color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/news_fragment_rv_container" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/news_fragment_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/news_fragment_toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#103058"
+            android:elevation="12dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/news_fragment_fl_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_back_caret"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/news_fragment_tx_appbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:letterSpacing="-0.02"
+                    android:maxLines="1"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    tools:text="privet"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/news_fragment_appbar"
+        android:id="@+id/feed_fragment_rl_media_placeholder_main"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/feed_fragment_tv_media_placeholder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#030303"
+            android:layout_centerInParent="true"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_horizontal"
+            android:text="Здесь будут все \n опубликованные фото" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:tint="#999999"
+            android:layout_above="@+id/feed_fragment_tv_media_placeholder_text"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_media"
+            android:layout_marginBottom="24dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:background="@drawable/background_blur"
+        android:id="@+id/news_fragment_fl_keyboard"
+        android:layout_alignParentBottom="true">
+
+        <ru.alfabank.alfamir.ui.custom_views.InvisibleToBackPressedEditText
+            android:id="@+id/news_fragment_et_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:hint="@string/edittext_hint_post"
+            android:textColorHint="#FFFFFF"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="6"
+            android:paddingLeft="12dp"
+            android:paddingRight="48dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="6sp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp" />
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/news_fragment_fl_send"
+            android:layout_gravity="right|bottom">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/news_fragment_image_send_comment"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_send"></ImageView>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus"
+        android:id="@+id/news_fragment_floating_button"
+        app:backgroundTint="#103058"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom|right"
+        android:visibility="invisible"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+
+
+    <item
+        android:drawable="@android:color/white"/>
+
+    <animation-list
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/splash_animation_test" android:oneshot="false">
+        <item android:drawable="@drawable/blue_circle" android:duration="100" />
+        <item android:drawable="@drawable/red_circle" android:duration="100" />
+        <item android:drawable="@drawable/yellow_circle" android:duration="100" />
+        <item android:drawable="@drawable/blue_circle" android:duration="100" />
+        <item android:drawable="@drawable/green_circle" android:duration="100" />
+        <item android:drawable="@drawable/red_circle" android:duration="100" />
+    </animation-list>
+
+    <!--<animation-list-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/splash_animation_decor_view_color_animation" android:oneshot="false">-->
+
+        <!--<item-->
+            <!--android:id="@+id/backgroundCenter">-->
+            <!--<shape android:shape="oval">-->
+                <!--<solid android:color="@color/splatoon2" />-->
+            <!--</shape>-->
+        <!--</item>-->
+
+        <!--<item android:id="@android:id/background">-->
+            <!--&lt;!&ndash;Background&ndash;&gt;-->
+            <!--<shape-->
+                <!--android:innerRadiusRatio="2.31"-->
+                <!--android:shape="ring"-->
+                <!--android:thicknessRatio="15"-->
+                <!--android:useLevel="false">-->
+                <!--<solid android:color="#CCC" />-->
+            <!--</shape>-->
+        <!--</item>-->
+
+
+        <!--<item android:id="@android:id/secondaryProgress">-->
+            <!--<shape-->
+                <!--android:innerRadiusRatio="2.31"-->
+                <!--android:shape="ring"-->
+                <!--android:thicknessRatio="15"-->
+                <!--android:useLevel="true">-->
+
+                <!--<gradient-->
+                    <!--android:centerColor="#999999"-->
+                    <!--android:endColor="#999999"-->
+                    <!--android:startColor="#999999"-->
+                    <!--android:type="sweep" />-->
+            <!--</shape>-->
+        <!--</item>-->
+
+        <!--<item android:id="@android:id/progress">-->
+            <!--<rotate-->
+                <!--android:fromDegrees="270"-->
+                <!--android:pivotX="50%"-->
+                <!--android:pivotY="50%"-->
+                <!--android:toDegrees="270">-->
+
+                <!--<shape-->
+                    <!--android:innerRadiusRatio="2.31"-->
+                    <!--android:shape="ring"-->
+                    <!--android:thicknessRatio="15"-->
+                    <!--android:useLevel="true">-->
+
+                    <!--<rotate-->
+                        <!--android:fromDegrees="0"-->
+                        <!--android:pivotX="50%"-->
+                        <!--android:pivotY="50%"-->
+                        <!--android:toDegrees="360" />-->
+
+                    <!--<solid android:color="#000" />-->
+
+                <!--</shape>-->
+            <!--</rotate>-->
+        <!--</item>-->
+    <!--</animation-list>-->
+
+    <item>
+        <bitmap
+            android:gravity="center_vertical|center_horizontal"
+            android:src="@drawable/ic_alfa_logo"/>
+    </item>
+</layer-list>

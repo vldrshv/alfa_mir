@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_container">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/home_fragment_toolbar"
+            android:layout_gravity="bottom"
+            layout="@layout/menu_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <ScrollView
+            android:id="@+id/menu_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            android:layout_below="@+id/home_fragment_toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#292929"
+                    android:lineSpacingExtra="16sp"
+                    android:text="Мой профиль"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:id="@+id/menu_fragment_image_profile"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp">
+
+                        <TextView
+                            android:id="@+id/menu_fragment_tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#292929"
+                            android:lineSpacingExtra="8sp"
+                            android:text="Фамилия Имя Отчество" />
+
+                        <TextView
+                            android:id="@+id/menu_fragment_tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#858585"
+                            android:lineSpacingExtra="8sp"
+                            android:text="Должность" />
+
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_subscriptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_team_profile"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Мои подписки"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_settings"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Настройки"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#292929"
+                    android:lineSpacingExtra="16sp"
+                    android:text="Общайтесь"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_sport"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Спортивные сообщества"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_forum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_forum"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Форум"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_notice_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_notice_board"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Доска объявлений"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#292929"
+                    android:layout_marginTop="32dp"
+                    android:text="Смотрите"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_alva_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_tv"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Альфа-ТВ"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_tv"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Видео"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#292929"
+                    android:layout_marginTop="32dp"
+                    android:text="О приложении"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp">
+
+                        <TextView
+                            android:id="@+id/menu_fragment_tv_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#292929"
+                            android:lineSpacingExtra="8sp"
+                            tools:text="Air (Версия 2.16)" />
+
+                        <TextView
+                            android:id="@+id/menu_fragment_tv_version_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#858585"
+                            android:lineSpacingExtra="8sp"
+                            tools:text="У вас новейшая версия" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_fragment_ll_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_profile_field"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="48dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_chat"
+                        android:tint="#292929" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#292929"
+                        android:lineSpacingExtra="8sp"
+                        android:text="Оставить отзыв"
+                        android:layout_marginLeft="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginRight="4dp"
+                        android:tint="#858585" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

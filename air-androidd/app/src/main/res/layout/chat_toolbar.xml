@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messenger_appbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:elevation="12dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/messenger_appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <FrameLayout
+                android:id="@+id/messenger_appbar_fl_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/ic_arrow_right"
+                    android:tint="#1875f0" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_centerVertical="true">
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/messenger_appbar_image_profile"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:id="@+id/messenger_appbar_tv_initials" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Авдуевский Михаил Сергеевич"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/messenger_appbar_tv_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Старший системный аналитик"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#6d6d72"
+                        android:letterSpacing="-0.02"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/messenger_appbar_tv_time" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/messenger_appbar_fl_options"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_more"
+                    android:tint="#858585" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

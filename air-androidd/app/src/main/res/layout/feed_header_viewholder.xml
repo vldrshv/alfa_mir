@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_header_viewholder_fl_main"
+    >
+
+    <ImageView
+        android:id="@+id/feed_header_viewholder_image_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        android:paddingTop="32dp"
+        android:minHeight="208dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/feed_header_viewholder_fl_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/feed_header_viewholder_image_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/photo_frame_circle_white"
+                >
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/feed_header_viewholder_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="8sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            tools:text="Дирекция по управлению"
+            android:layout_marginBottom="14dp"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/feed_header_viewholder_tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            tools:text="Скидки, акции, специальныеников банка"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginBottom="18dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="visible"
+            />
+
+        <FrameLayout
+            android:id="@+id/feed_header_viewholder_fl_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_subscribe"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:minWidth="200dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:id="@+id/feed_header_viewholder_button_status"
+                >
+
+                <TextView
+                    android:id="@+id/feed_header_viewholder_tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    tools:text="Вы подписаны"
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:id="@+id/feed_header_viewholder_fl_button"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#52ffffff"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_suggestions"
+                        android:paddingBottom="2dp"
+                        android:paddingRight="1dp"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

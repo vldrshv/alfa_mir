@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:id="@+id/home_fragment_toolbar_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="180"
+            android:src="@drawable/ic_menu"
+            android:tint="#ffffff" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_fragment_toolbar_new_post"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@+id/home_fragment_toolbar_notifications"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_icon_add"
+            android:tint="#ffffff" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_fragment_toolbar_notifications"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        android:layout_toLeftOf="@+id/home_fragment_toolbar_fl_avatar"
+        >
+
+        <ImageView
+            android:id="@+id/home_fragment_toolbar_image_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notification"
+            android:tint="#ffffff" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_fragment_toolbar_fl_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circle_background"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        >
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/home_fragment_toolbar_image_avatar"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/activity_menu_tv_profile_initials"/>
+    </FrameLayout>
+
+</RelativeLayout>

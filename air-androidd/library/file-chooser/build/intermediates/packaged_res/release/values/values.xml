@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="fileChooserStyle"/>
+    <bool name="use_activity">true</bool>
+    <bool name="use_provider">false</bool>
+    <color name="li_row_background">#fffbfbfb</color>
+    <color name="li_row_background_tint">#4027bfad</color>
+    <color name="light">#EDF4FE</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="white">#ffffff</color>
+    <dimen name="list_item_padding">8dp</dimen>
+    <dimen name="list_padding">0dp</dimen>
+    <string name="choose_file">Select a file</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">Select</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="new_folder_cancel">Cancel</string>
+    <string name="new_folder_ok">OK</string>
+    <string name="option_create_folder">New folder</string>
+    <string name="options_delete">Delete</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="title_choose">Choose</string>
+    <string name="title_choose_dict_file">Pick a dictionary</string>
+    <style name="FileChooserButtonStyle" parent="@android:style/Holo.Light.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+    </style>
+    <style name="FileChooserDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/FileChooserTitleStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:buttonBarStyle">@android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="android:buttonBarButtonStyle">@style/FileChooserButtonStyle</item>
+    </style>
+    <style name="FileChooserFileIconStyle">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="FileChooserListItemStyle">
+        <item name="fileChooserTextNameStyle">@style/FileChooserTextNameStyle</item>
+        <item name="fileChooserTextSizeStyle">@style/FileChooserTextSizeStyle</item>
+        <item name="fileChooserTextDateStyle">@style/FileChooserTextDateStyle</item>
+        <item name="fileChooserFileIconStyle">@style/FileChooserFileIconStyle</item>
+        <item name="android:background">@color/li_row_background</item>
+        <item name="fileListItemSelectedTint">@color/li_row_background_tint</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="FileChooserNewFolderStyle">
+        <item name="fileChooserNewFolderOverlayColor">#60ffffff</item>
+        <item name="fileChooserNewFolderBackgroundColor">#ffffffff</item>
+        <item name="fileChooserNewFolderWidthWeight">0.56</item>
+        <item name="fileChooserNewFolderElevation">25</item>
+        <item name="fileChooserNewFolderTextColor">@color/material_deep_teal_500</item>
+    </style>
+    <style name="FileChooserPathViewStyle">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textColor">#40000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="fileChooserPathViewElevation">2</item>
+        <item name="fileChooserPathViewDisplayRoot">true</item>
+    </style>
+    <style name="FileChooserStyle">
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:textColorPrimary">@color/material_deep_teal_500</item>
+        <item name="android:textColorSecondary">@color/material_deep_teal_500</item>
+        <item name="colorPrimary">@color/material_deep_teal_500</item>
+        <item name="colorPrimaryDark">@color/material_deep_teal_500</item>
+        <item name="colorAccent">@color/material_deep_teal_200</item>
+        <item name="fileChooserDialogGravity">center</item>
+        <item name="fileChooserDialogBackgroundDimAmount">0.3</item>
+        <item name="fileChooserDialogStyle">@style/FileChooserDialogStyle</item>
+        <item name="fileChooserListItemStyle">@style/FileChooserListItemStyle</item>
+        <item name="fileChooserPathViewStyle">@style/FileChooserPathViewStyle</item>
+        <item name="fileChooserNewFolderStyle">@style/FileChooserNewFolderStyle</item>
+    </style>
+    <style name="FileChooserTextDateStyle">
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:textColor">@color/material_deep_teal_200</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="FileChooserTextNameStyle">
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:drawablePadding">@dimen/list_item_padding</item>
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="FileChooserTextSizeStyle">
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:textColor">@color/material_deep_teal_200</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="FileChooserTitleStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+        <item name="android:textColor">#f000</item>
+    </style>
+    <style name="Theme.Transparent" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <declare-styleable name="FileChooser">
+        <attr format="flags" name="fileChooserDialogGravity">
+            <flag name="no_gravity" value="0"/>
+            <flag name="left" value="3"/>
+            <flag name="top" value="48"/>
+            <flag name="right" value="5"/>
+            <flag name="bottom" value="80"/>
+            <flag name="center" value="17"/>
+            <flag name="center_horizontal" value="1"/>
+            <flag name="center_vertical" value="16"/>
+            <flag name="start" value="8388611"/>
+            <flag name="end" value="8388613"/>
+        </attr>
+        <attr format="float|reference" name="fileChooserDialogBackgroundDimAmount"/>
+        <attr format="reference" name="fileChooserDialogStyle"/>
+        <attr format="reference" name="fileChooserListItemStyle"/>
+        <attr format="reference" name="fileChooserTextNameStyle"/>
+        <attr format="reference" name="fileChooserTextSizeStyle"/>
+        <attr format="reference" name="fileChooserTextDateStyle"/>
+        <attr format="reference" name="fileChooserFileIconStyle"/>
+        <attr format="color|reference" name="fileListItemSelectedTint"/>
+        <attr format="reference" name="fileChooserPathViewStyle"/>
+        <attr format="integer|reference" name="fileChooserPathViewElevation"/>
+        <attr format="boolean|reference" name="fileChooserPathViewDisplayRoot"/>
+        <attr format="reference" name="fileChooserNewFolderStyle"/>
+        <attr format="color|reference" name="fileChooserNewFolderOverlayColor"/>
+        <attr format="color|reference" name="fileChooserNewFolderBackgroundColor"/>
+        <attr format="float|reference" name="fileChooserNewFolderWidthWeight"/>
+        <attr format="integer|reference" name="fileChooserNewFolderElevation"/>
+        <attr format="color|reference" name="fileChooserNewFolderTextColor"/>
+    </declare-styleable>
+</resources>

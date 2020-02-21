@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Larger bbackground_circle_bluercle in back -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+            <corners
+                android:bottomLeftRadius="360dp"
+                android:bottomRightRadius="360dp"
+                android:topLeftRadius="360dp"
+                android:topRightRadius="360dp" />
+
+            <size android:height="20dp"
+                android:width="24dp"
+                />
+
+        </shape>
+    </item>
+    <!-- Smaller background_circle_bluercle in front -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- transparent stroke = larger_circle_size - smaller_circle_size -->
+            <stroke android:color="@android:color/transparent"
+                android:width="1.8dp"/>
+            <solid android:color="#e53935"/>
+            <corners
+                android:bottomLeftRadius="360dp"
+                android:bottomRightRadius="360dp"
+                android:topLeftRadius="360dp"
+                android:topRightRadius="360dp" />
+
+            <size android:height="20dp"
+                android:width="24dp"
+                />
+
+        </shape>
+    </item>
+</layer-list>

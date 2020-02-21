@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activity_notifications_settings_toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#103058"
+            android:elevation="12dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/activity_notifications_settings_ll_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="18dp"
+                    android:paddingRight="18dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:rotation="180"
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/toolbar_tx_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:letterSpacing="-0.02"
+                    android:maxLines="1"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:text="Настройка уведомлений"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="24dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Push-уведомления"
+                        android:textSize="24sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                    <Switch
+                        android:id="@+id/activity_notifications_settings_switch_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:theme="@style/BlueSwitch"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#6d6d72"
+                    android:paddingRight="8dp"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/push_settings_general"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+            <LinearLayout
+                android:id="@+id/activity_notifications_settings_ll_info_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#1875f0"
+                    android:letterSpacing="-0.01"
+                    android:text="События по избранным"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info"
+                    android:tint="#1875f0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Дни рождения"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                    <Switch
+                        android:id="@+id/activity_notifications_settings_switch_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/BlueSwitch"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#6d6d72"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    android:text="За неделю и в день события"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Отпуска"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                    <Switch
+                        android:id="@+id/activity_notifications_settings_switch_vacation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/BlueSwitch"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#6d6d72"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    android:text="За неделю и за день до события"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+            <LinearLayout
+                android:id="@+id/activity_notifications_settings_ll_info_subscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#1875f0"
+                    android:letterSpacing="-0.01"
+                    android:text="События по подпискам"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info"
+                    android:tint="#1875f0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Новые публикации"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                    <Switch
+                        android:id="@+id/activity_notifications_settings_switch_posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/BlueSwitch"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#6d6d72"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    android:paddingRight="8dp"
+                    android:text="Сообщения о новых публикациях в лентах, на которые Вы подписаны"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Новые комментарии"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                    <Switch
+                        android:id="@+id/activity_notifications_settings_switch_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/BlueSwitch"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#6d6d72"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    android:paddingRight="8dp"
+                    android:text="Сообщения о новых комментариях к публикациям, на которые Вы подписаны"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

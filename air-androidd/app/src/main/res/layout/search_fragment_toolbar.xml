@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:elevation="12dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/search_fragment_toolbar_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/ic_arrow_right"
+                    android:tint="#1875f0" />
+            </FrameLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/search_fragment_toolbar_back"
+                android:layout_toLeftOf="@+id/search_fragment_toolbar_close"
+                android:id="@+id/search_fragment_toolbar_edittext"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="#292929"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:hint="@string/search_toolbar_hint"
+                android:textColorHint="#858585"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+            <FrameLayout
+                android:id="@+id/search_fragment_toolbar_close"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_close"
+                    android:tint="#1875f0" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

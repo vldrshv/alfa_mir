@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:paddingBottom="64dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_area_question_fragment_image_survey_image"
+            />
+
+        <TextView
+            android:id="@+id/text_area_question_fragment_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#030303"
+            android:letterSpacing="-0.01"
+            tools:text="В каких случаях в керлинге говорят, что спортсмен поджег?"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/text_area_question_fragment_ll_question_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:visibility="visible"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_area_question_fragment_fl_text_input_0"
+                android:visibility="visible"
+                >
+
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:id="@+id/text_area_question_fragment_et_text_input_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/frame_enter_text_active"
+                    android:cursorVisible="true"
+                    android:gravity="top"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Введите текст"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:letterSpacing="-0.01"
+                    android:minHeight="160dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:imeOptions="actionDone"
+
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

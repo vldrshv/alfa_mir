@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#030303"
+                android:letterSpacing="-0.02"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/rc_item_show_name"
+                android:layout_marginTop="16dp"
+                tools:text="Альфа-Директ - Новости рынков"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_local_time"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/rc_item_show_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#8e8e93"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        tools:text="16:00 — 18:00" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rc_item_show_ll_password_needed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/rc_item_show_image_password_needed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_password_needed"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/rc_item_show_tv_password_needed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#8e8e93"
+                        tools:text="Нужен пароль"
+                        android:layout_marginLeft="8dp"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_caret_right"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="12dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#57c8c7cc"/>
+
+</LinearLayout>

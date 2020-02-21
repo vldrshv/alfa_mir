@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="336dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#030303"
+            android:lineSpacingExtra="12sp"
+            android:gravity="center_horizontal"
+            android:text="@string/info_push_settings_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#6d6d72"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="@string/info_push_settings_lead"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/ic_notification_bell_huge"
+            />
+
+
+        <TextView
+            android:id="@+id/info_push_settings_dialog_tv_settings"
+            android:layout_width="288dp"
+            android:layout_height="48dp"
+            android:text="Настроить"
+            android:gravity="center"
+            android:background="@drawable/background_curved_corners_blue_filled"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/info_push_settings_dialog_tv_not_now"
+            android:layout_width="288dp"
+            android:layout_height="48dp"
+            android:text="Не сейчас"
+            android:gravity="center"
+            android:textColor="#1875f0"
+            android:layout_marginTop="8dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

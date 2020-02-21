@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#de000000"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="Делегат — исполняющий обязанности отсутствующего до его возвращения"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/delegate_prompt_dialog_tv_ok"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center"
+            android:text="Понятно"
+            android:background="@drawable/background_curved_corners_blue_filled"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

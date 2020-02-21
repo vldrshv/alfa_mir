@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingBottom="4dp">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_grey">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/quote"
+                android:tint="@color/background_image_blue"
+                android:rotation="180"/>
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#f2f2f2"
+            android:layout_weight="0.4"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="12dp">
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/rc_quote_image_profile_icon"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/blue_circle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/rc_quote_tv_profile_initials"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/rc_news_item_post_header_ll_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp">
+
+                <TextView
+                    android:id="@+id/rc_quote_item_tv_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#000000"
+                    android:alpha="0.7"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="4sp"
+                    tools:text="Дружков Дмитрий Владимирович"/>
+
+                <TextView
+                    android:id="@+id/rc_quote_tv_profile_job_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_light"
+                    android:textStyle="normal"
+                    android:textColor="#858585"
+                    android:letterSpacing="-0.01"
+                    android:layout_marginTop="0dp"
+                    tools:text="вася пупкин\nпупкин вася"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rv_quote_tv_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:alpha="0.6"
+            android:lineSpacingExtra="5sp"
+            android:textColor="#292929"
+            android:textSize="18sp"
+
+            tools:text="аврмгавмгвмагвм dfguidfbgiudfghidufgh dfgiudhfgiudshfgiudfg dfigudsfgidushfgiudshfg dsfigubdsfiguhds gidsufgbdisfugbdsifugbid gidf gdif gisd fgdfigdsfigdsf g" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#f2f2f2"
+            android:layout_weight="0.4"/>
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_grey">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/quote"
+                android:tint="@color/background_image_blue"
+                android:rotation="180"
+                android:scaleX="-1"
+                />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

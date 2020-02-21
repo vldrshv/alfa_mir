@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="112dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0efff"
+        android:id="@+id/rc_item_favorite_page_selected_background"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp">
+
+            <FrameLayout
+                android:id="@+id/item_favorite_page_fl_page_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="12dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/item_favorite_page_image_page_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#7f000000"
+                    android:id="@+id/blur_background"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/item_favorite_page_image_page_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_favorite_page_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-light"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="8sp"
+                    android:maxLines="2"
+                    tools:text="Авдуевский Михаил Сергеasdasdasdевич"
+                    android:textColor="#030303"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/item_favorite_page_tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-light"
+                    android:letterSpacing="-0.02"
+                    android:maxLines="1"
+                    tools:text="Старший системный аналитик"
+                    android:textColor="#6d6d72"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/item_favorite_page_fl_caret"
+                android:layout_width="34dp"
+                android:layout_height="34dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_caret_right" />
+
+            </FrameLayout>
+            
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:id="@+id/item_favorite_page_fl_selected"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/ic_select_selected"
+                    android:src="@drawable/ic_selekt_selected"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/ic_select_unselected"
+                    android:src="@drawable/ic_select_unselected"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/borders_questionable"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

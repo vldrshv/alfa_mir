@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textColor="#de000000"
+        android:lineSpacingExtra="8sp"
+        android:text="Экспертиза — делитесь знаниями
+с коллегами и получайте помощь, когда требуется."
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textColor="#de000000"
+        android:lineSpacingExtra="8sp"
+        android:text="Ищите экспертов на портале «Альфа-Мир»"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textColor="#de000000"
+        android:lineSpacingExtra="8sp"
+        android:text="Скоро поиск экспертов будет доступен
+в приложении «Air»"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/skills_prompt_dialog_tv_ok"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="8sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Понятно"
+        android:background="@drawable/background_curved_corners_blue_filled"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        />
+
+</LinearLayout>

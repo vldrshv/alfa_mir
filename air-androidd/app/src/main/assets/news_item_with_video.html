@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0" />
+            <script language="javascript">
+                    function setImage(id,content) {
+                        var im = document.getElementById(id);
+                        im.style.backgroundImage = 'url(' + content + ')';
+                    }
+
+                    function setPoster(id,content) {
+                        var vid = document.getElementById(id);
+                        vid.poster = content;
+                    }
+
+                    function changeVideoSource(id, url) {
+                        var video = document.getElementById(id);
+                        video.src = url;
+                        video.play();
+                    }
+
+                    function onPlayVideo(id, reqPassword) {
+                        var video = document.getElementById(id);
+
+                        if (video.src == "") {
+                            if(app){
+                                var typedPassword = "";
+                                if (reqPassword == 1){
+                                    typedPassword = prompt("Введите PIN-код для просмотра видео", "");
+                                    if (typedPassword) {
+
+                                    } else {
+                                        video.load();
+                                        return
+                                    }
+                                }
+                                app.onVideoClicked(id, typedPassword);
+                            }
+
+                            if (window.webkit.messageHandlers.player) {
+                                var typedPassword = "";
+                                if (reqPassword == 1){
+                                    typedPassword = prompt("Введите PIN-код для просмотра видео", "");
+                                    if (typedPassword) {
+
+                                    } else {
+                                        video.load();
+                                        return
+                                    }
+                                }
+                                var message = { id: id, pwd: typedPassword };
+                                window.webkit.messageHandlers.player.postMessage(message);
+                            }
+                        }
+                    }
+            </script>
+    </head>
+
+    <body style='margin:0px;padding:0px;'><div style='position:relative;margin-left:10px;margin-right:10px;word-wrap:break-word;'><div style="width:412px;height:274px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image10" style="width:100%;height:274px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><h2 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">Лето, музыка и драйв:&nbsp;первые итоги, фото и видео c&nbsp;юбилейного&nbsp;Alfa Future People.&nbsp;&nbsp;</h2><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">Ты был на AFPV? Покажи нам свой фест: пости фото в соцсети и в мобильное&nbsp;приложение Air c хэштегами&nbsp;<strong>#альфатанцует и #afp2018.</strong><div style="margin-bottom:16px;"></div></div><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">На фестивале работали два&nbsp;корреспондента «Альфа-Мира»:&nbsp;один был ограничен в&nbsp;возможностях, а второй ни в чем себе не отказывал. Скоро мы покажем, что у них получилось.&nbsp;&nbsp;А пока — несколько цифр, фото и видео.&nbsp;</div><h1 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">AFPV в семи цифрах</h1><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>
+    <strong>10-12 августа&nbsp;</strong></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">берег Волги под Нижним Новгородом&nbsp;превратился в территорию&nbsp;музыки, технологий,&nbsp;межгалактических путешествий, невероятных гаджетов, начинающих&nbsp;и состоявшихся талантов, современных платежных технологий.</div><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>
+    <strong>52 тысячи&nbsp;гостей&nbsp;</strong></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">приехали увидеть всё это своими глазами.</div><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>
+    <strong>Более 300 пар</strong></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">поженились в зоне свадеб fast-married от Альфа-Банка. В прошлом году их было 100.&nbsp;&nbsp;</div><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>
+    <strong>30 молодых диджеев&nbsp;</strong></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">выступили на новой сцене, созданной Альфа-Банком совместно с платформой по поиску талантов ShowCast — ShowCast Stage by Alfa-Bank. Артисты прошли всероссийский кастинг, чтобы попасть на сцену,&nbsp;на которой их сменили профессионалы электронной сцены.&nbsp;</div><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>
+    <strong>24 </strong>
+    <span style="font-family:inherit !important;inherit !important;line-height:inherit !important;">
+            <strong>современных банкомата Альфа-Банка</strong></span></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">позволяли&nbsp;быстро и&nbsp;бесконтактно проводить операции картами, браслетами и любыми гаджетами. В них также можно было пополнить карту (карты можно было привезти с собой или&nbsp;получить на AFP&nbsp;в офисе Альфа-Банка).</div><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>
+    <strong>много</strong></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">
+    <span style="font-family:inherit !important;inherit !important;line-height:inherit !important;">потрясающих&nbsp;арт-объектов&nbsp;Альфа-Банка на фестивале, которые не оставили равнодушными никого:&nbsp;светящиеся качели, гигантские солнечные очки, световые альфа-люди и стена с нашим огромным&nbsp;логотипом.</span></div><ul style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:16px; !important;"><li>&nbsp;<strong>о</strong><strong>дин Покрас Лампас</strong></li></ul><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;"><span style="font-family:inherit !important;inherit !important;line-height:inherit !important;">общался с гостями, устраивал живые перформансы;&nbsp;оформил сцену ShowCast Stage by Alfa-Bank, ставшую одним из самых запоминающихся арт-объектов фестиваля.&nbsp;Ночью весь периметр шатра становился живым холстом, на котором с помощью видеопроекции были представлены работы художника-калиграфа.</span><span style="font-family:inherit !important;inherit !important;line-height:inherit !important;"></span></div><h1 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">Немного фото и видеоотчеты первого и второго дней AFPV</h1><div style="width:412px;height:274px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image1" style="width:100%;height:274px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:309px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image2" style="width:100%;height:309px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:309px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image3" style="width:100%;height:309px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:309px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image4" style="width:100%;height:309px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:309px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image5" style="width:100%;height:309px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:305px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image6" style="width:100%;height:305px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:309px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image7" style="width:100%;height:309px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:307px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image8" style="width:100%;height:307px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><div style='margin-bottom:16px;'></div><div style="width:412px;height:309px;overflow:hidden;border:none;padding:0;margin-left:-10px;text-align:center;"><div id="air_image9" style="width:100%;height:309px;width-max:412px;background-size:cover;background-repeat:no-repeat;background-position:center center;overflow:hidden;border:none;padding:0;text-align:center;"></div></div><h1 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">Первый день&nbsp; &nbsp; &nbsp;</h1><h1 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">Второй день&nbsp;</h1><h1 style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:800;">Bass Stage-2018&nbsp;</h1><div style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px !important;line-height:1.4 !important;margin:8px 0px 8px 0px" style="font-family:-apple-system,BlinkMacSystemFont,OpenSans !important;font-size:18px;font-weight:normal;">видео руководителя&nbsp;направления по работе с социальными сетями
+    <strong>Антона Садарова</strong></div>
+        <video controls  style="width-max:116px;height:250px;margin:0px auto;margin-bottom:5px;margin-top: -10px;" poster="http://alfa/ya/PublishingImages/AirImages/phl_video_854x480.png" id="alfatv_iframe0" data-id="2908" preload="none" width="100%" height="250" onplay="onPlayVideo('alfatv_iframe0',0)"><source id="source_video" type="video/mp4"></video>
+        <video controls  style="width-max:116px;height:250px;margin:0px auto;margin-bottom:5px;margin-top: -10px;" poster="http://alfa/ya/PublishingImages/AirImages/phl_video_854x480.png" id="alfatv_iframe1" data-id="2906" preload="none" width="100%" height="250" onplay="onPlayVideo('alfatv_iframe1',0)"><source id="source_video" type="video/mp4"></video><video controls  style="width-max:116px;height:250px;margin:0px auto;margin-bottom:5px;margin-top: -10px;" poster="http://alfa/ya/PublishingImages/AirImages/phl_video_854x480.png" id="alfatv_iframe2" data-id="2907" preload="none" width="100%" height="250" onplay="onPlayVideo('alfatv_iframe2',0)"><source id="source_video" type="video/mp4"></video></div></body>
+</html>

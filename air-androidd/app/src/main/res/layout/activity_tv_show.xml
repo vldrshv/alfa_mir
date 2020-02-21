@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_post_toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#103058"
+        android:elevation="12dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/activity_tv_show_ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:paddingEnd="18dp"
+                android:paddingRight="18dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/ic_back_caret" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="-0.02"
+                    android:text="Альфа-ТВ"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_tx_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="-0.02"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Трансляция"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+            <FrameLayout
+                android:id="@+id/activity_tv_show_fl_team"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="9dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_more"
+                    android:tint="@android:color/white" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/activity_tv_show_sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <FrameLayout
+                android:id="@+id/activity_tv_show_fl_password_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:id="@+id/myVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:visibility="visible"
+                    app:controller_layout_id="@layout/playback_control" />
+
+                <LinearLayout
+                    android:id="@+id/activity_tv_show_ll_password_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="#efeff4"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_promt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        android:gravity="center_horizontal"
+                        android:text="Чтобы смотреть, введите код" />
+
+                    <LinearLayout
+                        android:id="@+id/activity_tv_show_ll_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/activity_tv_show_image_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_lock" />
+
+                        <FrameLayout
+                            android:id="@+id/activity_tv_show_fl_password"
+                            android:layout_width="112dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/background_enter_password">
+
+                            <ru.alfabank.alfamir.ui.custom_views.PasswordEditText
+
+                                android:id="@+id/activity_tv_show_et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:backgroundTint="@android:color/transparent"
+                                android:cursorVisible="false"
+                                android:inputType="number"
+                                android:focusedByDefault="false"
+
+                                android:paddingTop="0dp"
+                                android:paddingBottom="0dp"
+                                android:paddingRight="0dp"
+                                android:paddingLeft="4dp"
+
+                                android:textSize="24sp"
+                                android:fontFamily="sans-serif"
+                                android:textStyle="normal"
+                                android:textColor="#030303"
+
+                                android:maxLength="4"
+                                android:maxLines="1"
+                                android:letterSpacing="0.5" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_password_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#8e8e93"
+                        android:lineSpacingExtra="2sp"
+                        android:gravity="center_horizontal"
+                        android:text="Узнайте код у организатора"
+                        android:layout_marginTop="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_not_running"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:letterSpacing="-0.02"
+                        android:text="Трансляция начнется позже"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/activity_tv_show_ll_wrong_ip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/activity_tv_show_tv_wrong_ip1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="normal"
+                            android:textColor="#ffffff"
+                            android:letterSpacing="-0.02"
+                            android:layout_gravity="center"
+                            android:text="Чтобы смотреть "
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/activity_tv_show_tv_wrong_ip2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="normal"
+                            android:textColor="#ffffff"
+                            android:letterSpacing="-0.02"
+                            android:layout_gravity="center"
+                            android:text="подключитесь к корпоративному Wi-Fi"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#88000000"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/debug_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/controls_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/retry_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/retry"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_tv_show_rl_show_info"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#007aff"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:id="@+id/activity_tv_show_image_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_calendar_16"
+                        android:tint="@android:color/white"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@android:color/white"
+                        tools:text="21.07" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/activity_tv_show_image_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_local_time"
+                        android:tint="@android:color/white"
+                        android:layout_marginTop="1dp" />
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@android:color/white"
+                        tools:text="16:00 - 18:00" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/activity_tv_show_tv_time_estimate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    tools:text="через 2 недели, 2"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_tv_show_ll_author"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0dp"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="12dp">
+
+                        <ImageView
+                            android:id="@+id/activity_tv_show_image_profile_icon"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/background_profile_empty_white"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/activity_tv_show_tv_profile_initials"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/activity_tv_show_tv_favorites_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Организатор"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="#030303"
+                            android:letterSpacing="-0.01"
+                            android:ellipsize="end"
+                            android:maxLines="1" />
+
+
+                        <TextView
+                            android:id="@+id/activity_tv_show_tv_host_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Авдуевский Мифыфыв фывфывф ыфв"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="normal"
+                            android:textColor="#6d6d72"
+                            android:letterSpacing="-0.02"
+                            android:ellipsize="end"
+                            android:maxLines="1" />
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item_favorites_fl_caret"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_caret_right"
+                            android:layout_gravity="center" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/borders_questionable" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_tv_show_rl_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:animateLayoutChanges="true"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="32dp">
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="32dp"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:lineSpacingExtra="7sp"
+                        tools:text="ВКС по результатам пройденных дистнционных курсов" />
+
+
+                    <TextView
+                        android:id="@+id/activity_tv_show_tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"
+                        android:textColor="#030303"
+                        android:letterSpacing="-0.02"
+                        android:lineSpacingExtra="5sp"
+                        android:visibility="visible"
+                        tools:text="Редакция vc.asd asd dasdasd dдниками блаблаблаasd" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/activity_tv_show_fl_more"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="22dp">
+
+                    <ImageView
+                        android:id="@+id/activity_tv_show_image_suggestions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_arrow_suggestions" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/borders_questionable" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/activity_tv_show_tv_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    tools:text="Зал 1" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/borders_questionable"
+                android:layout_marginBottom="80dp"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_post_ll_curtain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_author_placeholder"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_heading_placeholder"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_image_placeholder"
+            android:layout_marginTop="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_text_placeholder"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

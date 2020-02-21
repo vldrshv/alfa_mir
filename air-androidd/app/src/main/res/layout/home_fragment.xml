@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/updateContainer"
+                android:orientation="horizontal"
+                android:background="#EF3124"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/update_available" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="17dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:tint="#ffffff"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_caret_right" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_container"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/updateContainer"
+                android:layout_height="400dp"
+                android:layout_marginBottom="24dp"
+                android:background="#fafafa" />
+
+            <FrameLayout
+                android:id="@+id/home_fragment_top_news_fl_temp_background"
+                android:layout_below="@+id/updateContainer"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#51000000"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/poster_horizontal_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/recycler_container"
+                android:background="#fafafa" />
+
+            <include
+                android:id="@+id/home_fragment_search"
+                layout="@layout/home_fragment_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="368dp"
+                android:layout_marginRight="12dp" />
+
+            <include
+                android:id="@+id/home_fragment_human_help"
+                layout="@layout/human_help_view"
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"
+                android:layout_below="@+id/poster_horizontal_recycler" />
+
+            <include
+                android:id="@+id/home_fragment_human_desk"
+                layout="@layout/human_desk_view"
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"
+                android:layout_below="@+id/home_fragment_human_help"
+                android:layout_marginTop="12dp" />
+
+            <include
+                android:id="@+id/home_fragment_toolbar"
+                layout="@layout/home_fragment_toolbar"
+                android:layout_below="@+id/updateContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="12dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

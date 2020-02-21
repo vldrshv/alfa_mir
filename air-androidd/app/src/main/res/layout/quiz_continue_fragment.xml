@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/continue_fragment_image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000">
+
+        <FrameLayout
+            android:id="@+id/continue_fragment_fl_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                android:rotation="180"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/continue_fragment_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                tools:text="Опрос до 23 июня"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/continue_fragment_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="normal"
+                tools:text="Цифровая реклама на билбордах" />
+
+            <TextView
+                android:id="@+id/continue_fragment_tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                android:maxLines="5"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="visible"
+                tools:text="@string/onegin"
+                />
+
+        </LinearLayout>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            >
+
+            <ProgressBar
+                android:id="@+id/continue_fragment_progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progress_bar_white_with_background"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:progress="25"/>
+
+            <TextView
+                android:id="@+id/continue_fragment_tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="8sp"
+                tools:text="Завершено на 75%"
+                android:layout_gravity="left|center_vertical"
+                android:padding="12dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/continue_fragment_ll_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:padding="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="Продолжить"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

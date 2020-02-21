@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_input_ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:elevation="12dp">
+
+    <EditText
+        android:id="@+id/text_input_ed_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:hint="@string/chat_edit_text_hint"
+        android:textColorHint="#858585"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="6"
+        android:paddingLeft="12dp"
+        android:paddingRight="48dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingExtra="6sp"
+        android:textStyle="normal"
+        android:textColor="#292929"
+        android:letterSpacing="-0.01"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/attachment_fl_send"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right|bottom">
+
+        <ImageView
+            android:id="@+id/attachment_image_send"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icn_attach_1875f0_24x24"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/text_input_fl_send"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right|bottom">
+
+        <ImageView
+            android:id="@+id/text_input_image_send"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_send_message"
+            android:tint="#858585" />
+    </FrameLayout>
+</LinearLayout>

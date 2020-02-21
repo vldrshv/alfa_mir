@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="#efeff4">
+        <TextView
+            android:id="@+id/rc_item_show_header_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:textColor="#6d6d72"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="2sp"
+            tools:text="Сегодня, 21 ноября"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#57c8c7cc"
+        android:layout_alignParentBottom="true"
+        />
+
+</LinearLayout>

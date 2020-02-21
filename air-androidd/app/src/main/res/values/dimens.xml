@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_weidth">330dip</dimen>
+    <dimen name="spacing">12dp</dimen>
+    <dimen name="info_favorites_dialog_width">354dp</dimen>
+    <dimen name="info_favorites_dialog_height">400dp</dimen>
+
+    spacing
+
+</resources>

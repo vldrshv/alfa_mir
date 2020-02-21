@@ -1,0 +1,2928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:paddingBottom="64dp"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_fragment_image_survey_image"/>
+
+        <TextView
+            android:id="@+id/checkbox_fragment_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#030303"
+            android:letterSpacing="-0.01"
+            tools:text="В каких случаях в керлинге говорят, что спортсмен поджег?"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_0"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_0"
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_0"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="5"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_0"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_1"
+                android:visibility="gone"
+
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_1"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="13"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_1"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_2"
+                android:visibility="gone"
+
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_2"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="13"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_2"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_3"
+                android:visibility="gone"
+
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_3"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="13"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_3"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_4"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_4"
+                android:visibility="gone"
+
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_4"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="13"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_4"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_5"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_5"
+                android:visibility="gone"
+
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_5"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_5"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_6"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_6"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_6"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_6"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_7"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_7"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_7"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_7"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_8"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_8"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_8"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_8"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_9"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_9"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_9"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_9"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_10"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_10"
+                android:visibility="gone"
+
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_10"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_10"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_11"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_11"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_11"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_11"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_12"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_12"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_12"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_12"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_13"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_13"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_13"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_13"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_14"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_14"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_14"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_14"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_15"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_15"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_15"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_15"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_16"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_16"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_16"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_16"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_17"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_17"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_17"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_17"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_18"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_18"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_18"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_18"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_19"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_19"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_19"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_19"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_20"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_20"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_20"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_20"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_21"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_21"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_21"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_21"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_22"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_22"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_22"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_22"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_23"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_23"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_23"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_23"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_24"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_24"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_24"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_24"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_25"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_25"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_25"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_25"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_26"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_26"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_26"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_26"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_27"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_27"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_27"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_27"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_28"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_28"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_28"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_28"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_29"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_29"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_29"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_29"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_30"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_30"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_30"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_30"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_31"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_31"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_31"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_31"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_32"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_32"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_32"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_32"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_fragment_ll_question_33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:background="@drawable/ripple_for_white_elements"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/checkbox_fragment_image_selector_33"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_checkbox_unchecked"
+                    />
+
+                <TextView
+                    android:id="@+id/checkbox_fragment_tv_question_33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="8dp"
+                    android:letterSpacing="-0.01"
+                    tools:text="Ваш вариант"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/checkbox_fragment_fl_text_input_33"
+
+                android:visibility="gone"
+                >
+                <ru.alfabank.alfamir.ui.custom_views.UnfocusableEditText
+                    android:background="@drawable/frame_enter_text_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="37dp"
+                    android:hint="Введите текст"
+                    android:cursorVisible="true"
+                    android:id="@+id/checkbox_fragment_et_text_input_33"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLength="600"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal"
+                    android:letterSpacing="-0.01"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="true"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkbox_fragment_fl_text_input_click_33"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:id="@+id/search_person_viewholder_rl_container"
+    >
+
+    <FrameLayout
+        android:id="@+id/search_person_viewholder_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <ImageView
+            android:id="@+id/search_person_viewholder_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/search_person_viewholder_tv_initials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_toRightOf="@+id/search_person_viewholder_fl"
+        android:layout_toLeftOf="@+id/search_person_viewholder_image_caret_right">
+
+        <TextView
+            android:id="@+id/search_person_viewholder_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#292929"
+            android:lineSpacingExtra="8sp"
+            tools:text="Иванов Валентин Романо12312331вич"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/search_person_viewholder_tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#858585"
+            android:lineSpacingExtra="8sp"
+            tools:text="Руководитель направления пaswwwas"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_person_viewholder_image_caret_right"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_caret_right"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/search_person_viewholder_fl_separate_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

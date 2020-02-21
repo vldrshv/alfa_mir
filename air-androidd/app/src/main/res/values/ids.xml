@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="constraint" type="id" />
+    <item name="back_button" type="id" />
+    <item name="recycler" type="id" />
+    <item name="image" type="id" />
+</resources>

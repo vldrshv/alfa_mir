@@ -1,0 +1,74 @@
+<resources>
+
+    <!--App theme-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition">@transition/change_image_transform</item>
+    </style>
+
+    <!-- Transparent status bar -->
+    <style name="TransparentStatusBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!-- splash_screen_decorview_learning_animation animation-->
+    <style name="AnimationLearning" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_decorview_learning_animation</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!-- Animated splash theme-->
+    <style name="AnimatedSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_decorview_learning_animation</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+    </style>
+
+    <!--Splash theme-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_decorview_logo</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+    </style>
+
+    <!--Default theme-->
+    <style name="DefaultTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--Fonts-->
+    <style name="OpenSans.Light" parent="android:TextAppearance">
+        <item name="fontPath">fonts/OpenSans-Light.ttf</item>
+    </style>
+
+    <style name="OpenSans.Regular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+    </style>
+
+    <!--Tabs-->
+    <style name="TabWithExtraSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Survey-->
+    <style name="BlueCheckBox">
+        <item name="colorControlNormal">#cccccc</item>
+        <item name="colorControlActivated">#cccccc</item>
+    </style>
+
+    <!--Notification settings-->
+    <style name="BlueSwitch" >
+        <item name="colorControlActivated">@color/switchColor</item>
+    </style>
+
+</resources>

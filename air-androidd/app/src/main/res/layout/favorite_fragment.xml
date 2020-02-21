@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/fragment_chat_list_toolbar"
+        android:layout_gravity="bottom"
+        layout="@layout/favorite_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_container_favorites"
+        android:layout_below="@+id/fragment_chat_list_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:id="@+id/fragment_favorites_ll_favorite"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/item_search_page_tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Сохраненные статьи"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="normal"
+                            android:textColor="#030303"
+                            android:letterSpacing="-0.02"
+                            android:lineSpacingExtra="6sp" />
+
+                        <TextView
+                            android:id="@+id/item_search_page_tv_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Их колличество"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="normal"
+                            android:textColor="#6d6d72"
+                            android:letterSpacing="-0.02"
+                            android:lineSpacingExtra="2sp" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item_favorites_fl_caret"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_caret_right" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/borders_questionable" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingTop="8dp"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/favourites"
+                android:visibility="visible"
+                android:layout_below="@+id/activity_post_toolbar_main"
+                android:layout_above="@+id/nav_bar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/fragment_favorites_ll_empty"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textSize="16sp"
+                    android:textColor="#6d6d72"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="8sp"
+                    android:gravity="center_horizontal"
+                    android:text="У вас нет коллег в избранном " />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="16sp"
+                    android:id="@+id/fragment_favorites_tv_explanation"
+                    android:textColor="#000000"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="8sp"
+                    android:gravity="center_horizontal"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorites_empty"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_container_empty"
+        android:visibility="gone"
+        android:layout_below="@+id/fragment_chat_list_toolbar">
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

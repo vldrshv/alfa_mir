@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="112dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp">
+
+        <FrameLayout
+            android:id="@+id/item_search_page_fl_page_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:id="@+id/item_search_page_image_page_image"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_search_page_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="8sp"
+                android:maxLines="2"
+                android:text="Авдуевский Михаил Сергеasdasdasdеasdasdasdasdвич"
+                android:textColor="#030303"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/item_search_page_tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="-0.02"
+                android:maxLines="1"
+                android:text="Старший системный аналитик"
+                android:textColor="#6d6d72"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/item_favorites_fl_caret"
+            android:layout_width="34dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_caret_right" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borders_questionable" />
+
+</LinearLayout>
